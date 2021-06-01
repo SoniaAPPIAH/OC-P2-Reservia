@@ -10,7 +10,7 @@
 
 #bloc_page
 {
-    width: 95%;
+    width: 92%;
     margin: auto;
 }
 
@@ -38,7 +38,7 @@ nav ul
 
 nav li
 { 
-    margin: 19px 10px 10px 15px;
+    margin: 23px 0px 10px 30px;
 }
 
 nav a
@@ -124,14 +124,21 @@ form i
     align-items: center;
     margin: 30px auto;
 }
+/* MAIN - PREMIERE PARTIE */
 
-/* MAIN - SECTION HEBERGEMENT A MARSEILLE */
+#premiere_partie
+{
+    display: flex;
+}
+
+/* SECTION HEBERGEMENT A MARSEILLE */
 
 #hebergements_a_marseille
 {
     display: flex;
-    flex: 3;
+    flex: 2.6;
     flex-direction: column;
+    margin-right: 50px;
     background-color: #F2F2F2;
     border-radius: 25px;
 }
@@ -150,15 +157,14 @@ form i
     width: 240px;
     height: 200px;
     border-radius: 20px;
-
 }
 
 .tuiles_hebergements_marseille img
 {
-    width: 240px;
-    height: 60%;
+    width: auto;
+    height: 56%;
     object-fit: cover;
-    border: 5px solid white;
+    border: 6px solid white;
     border-radius: 20px 20px 0 0;
 }
 
@@ -171,7 +177,7 @@ h2
 {
     font-family: 'Raleway Bold';
     font-size: 1rem;
-    margin-top: 5px;
+    margin-top: 6px;
     margin-bottom: 0;
 }
 
@@ -179,6 +185,7 @@ h2
 {
     font-size: 0.9rem;
     margin-top: 4px;
+    margin-bottom: 0;
 }
 
 strong
@@ -186,3 +193,59 @@ strong
     font-family: 'Raleway Bold';
 }
 
+.etoiles_hebergements
+{
+    display: flex;
+    margin-top: 6px;
+    font-size: 0.8rem;
+}
+
+.etoiles_bleues
+{
+    display: flex;
+    color: #0065FC;
+}
+
+.etoiles_grises
+{
+    display: flex;
+    color: #D9D9D9;
+}
+
+/* SECTION LES PLUS POPULAIRES */
+
+#les_plus_populaires
+{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    border-radius: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#bloc_les_plus_populaires
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tuiles_les_plus_populaires
+{
+    display: flex;
+    background-color: white;
+    width: 440px;
+    height: 190px;
+    border-radius: 20px;
+}
+
+.tuiles_les_plus_populaires img
+{
+    width: 38%;
+    height: auto;
+    object-fit: cover;
+    border: 6px solid white;
+    border-radius: 20px 0 0 20px;
+}
