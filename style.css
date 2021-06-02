@@ -224,7 +224,6 @@ strong
     background-color: #F2F2F2;
     border-radius: 25px;
     padding: 20px 50px 0 50px;
-    box-shadow: ;
 }
 
 #bloc_les_plus_populaires
@@ -258,4 +257,35 @@ strong
     object-fit: cover;
     border: 6px solid white;
     border-radius: 20px 0 0 20px;
+}
+
+/* FOOTER */
+
+footer
+{
+    display: flex;
+    background-color: #F2F2F2;
+    padding: 25px 15px 25px 40px;
+}
+
+footer div
+{
+    margin-right: 400px;
+}
+
+h3
+{
+    font-family: 'Raleway Bold', sans-serif;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+footer li
+{
+    font-family: 'Raleway Regular', sans-serif;
+    margin-bottom: 15px;
 }
