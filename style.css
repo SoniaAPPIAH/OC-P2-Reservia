@@ -139,7 +139,7 @@ form i
     flex: 2.6;
     flex-direction: column;
     margin-right: 50px;
-    padding: 20px 50px 20px 50px;
+    padding: 20px 0 20px 50px;
     background-color: #F2F2F2;
     border-radius: 25px;
 }
@@ -155,8 +155,10 @@ form i
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: 240px;
-    height: 200px;
+    width: 320px;
+    height: 240px;
+    margin-right: 40px;
+    margin-bottom: 40px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
@@ -164,7 +166,7 @@ form i
 .tuiles_hebergements_marseille img
 {
     width: auto;
-    height: 56%;
+    height: 60%;
     object-fit: cover;
     border: 6px solid white;
     border-radius: 20px 20px 0 0;
@@ -178,7 +180,7 @@ form i
 h2
 {
     font-family: 'Raleway Bold';
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin-top: 6px;
     margin-bottom: 0;
 }
@@ -186,7 +188,7 @@ h2
 .bloc_hebergements_marseille p
 {
     font-size: 0.9rem;
-    margin-top: 4px;
+    margin-top: 8px;
     margin-bottom: 0;
 }
 
@@ -198,7 +200,7 @@ strong
 .etoiles_hebergements
 {
     display: flex;
-    margin-top: 6px;
+    margin-top: 10px;
     font-size: 0.8rem;
 }
 
@@ -244,7 +246,6 @@ strong
     background-color: white;
     width: 440px;
     height: 170px;
-    margin-top: 10px;
     margin-bottom: 40px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
