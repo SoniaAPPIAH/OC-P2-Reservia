@@ -259,6 +259,79 @@ strong
     border-radius: 20px 0 0 20px;
 }
 
+/* MAIN - DEUXIEME PARTIE */
+
+#deuxieme_partie
+{
+    margin-top: 70px;
+}
+
+#activites_a_marseille
+{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    margin-bottom: 15px;
+}
+
+.tuiles_activites_vertical
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 550px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
+}
+
+.tuiles_activites_vertical img
+{
+    width: auto;
+    height: 91%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.tuiles_activites_vertical h2
+{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.colonne_activites
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.tuiles_activites_horizontal
+{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 400px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
+    margin-bottom: 50px;
+}
+
+.tuiles_activites_horizontal img
+{
+    width: auto;
+    height: 80%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+.tuiles_activites_horizontal h2
+{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
 /* FOOTER */
 
 footer
