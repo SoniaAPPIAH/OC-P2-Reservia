@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Raleway Regular';
+    src: url('fonts/Raleway-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Raleway Bold';
+    src: url('fonts/Raleway-Bold.ttf') format('truetype');
+}
+
+* {
+    border: red solid 1px;
+} 
+
+body {
+    margin: 0;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin: 0 1.875rem;
+}
+
+header img {
+    width: 10rem;
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+
+header li {
+    padding: 3.1rem 1rem 2rem 1rem;
+}
+
+header a {
+    font-family: 'Raleway Regular', sans-serif;
+    text-decoration: none;
+    padding: 3rem 2rem 0 2rem;
+    color: black;
+}
+
+header a:hover {
+    color: #0065FC;
+    border-top: 2px solid #0065FC;
+}
+
+/* MAIN - PARTIE RECHERCHE */
+
+#barre_recherche {
+    display: flex;
+}
+
+#filtres {
+    display: flex;
+}
+
+#filtres div, #infos {
+    display: flex;
+    align-items: center;
+}
+
+
+/* MAIN - PREMIERE PARTIE - HEBERGEMENT A MARSEILLE */
+
+#premiere_partie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 1.875rem;
+}
+
+#hebergements_a_marseille {
+    background-color: #F2F2F2;
+    width: 65%;
+    min-width: 44rem;
+}
+
+/* MAIN - PREMIERE PARTIE - LES PLUS POPULAIRES */
+
+#les_plus_populaires {
+    background-color: #F2F2F2;
+    width: 30%;
+    min-width: 19rem;
+}
