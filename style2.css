@@ -7,9 +7,9 @@
     src: url('fonts/Raleway-Bold.ttf') format('truetype');
 }
 
-* {
-    border: solid red 1px;
-}
+/* * {
+    border: solid rgb(255 0 0 / 30%) 1px;
+} */
 
 body {
     margin: 0;
@@ -46,6 +46,12 @@ header a {
     color: black;
 }
 
+#nav_sinscrire
+{
+    font-family: 'Raleway Bold', sans-serif;
+    color: #0065FC;
+}
+
 header a:hover {
     color: #0065FC;
     border-top: 2px solid #0065FC;
@@ -54,7 +60,7 @@ header a:hover {
 /* MAIN - PARTIE RECHERCHE */
 
 #partie_recherche {
-    margin: 0 1.875rem;;
+    margin: 30px 1.875rem 0 1.875rem;
 }
 
 h1 {
@@ -72,9 +78,30 @@ p  {
 
 form i {
     width: 30%;
-    padding: 17px;
+    padding: 14px;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
+}
+
+#champ_texte_rechercher {
+    height: 100%;
+    width: 200px;
+    border: #F2F2F2 solid 1px;
+    padding-left: 10px;
+    font-family: 'Raleway Bold';
+    font-size: 1rem;
+}
+
+#bouton_rechercher {
+    height: 100%;
+    width: 110px;
+    border: none;
+    background-color: #0065FC;
+    border-radius: 0 15px 15px 0;
+    color: white;
+    font-family: 'Raleway Regular';
+    font-weight: bold;
+    font-size: 1rem;
 }
 
 #filtres {
@@ -151,12 +178,13 @@ form i {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-bottom: 1.5rem;
 }
 
 .tuiles_hebergements_marseille {
     display: flex;
     flex-direction: column;
-    width: clamp(15rem, 29%, 40rem);
+    width: clamp(15rem, 31%, 40rem);
     background-color: white;
     height: 260px;
     margin-bottom: 40px;
@@ -210,6 +238,9 @@ strong
     color: #D9D9D9;
 }
 
+#herbegerments_a_marseille h2 {
+    margin-top: 100px;
+}
 /* MAIN - PREMIERE PARTIE - LES PLUS POPULAIRES */
 
 #les_plus_populaires {
@@ -246,6 +277,13 @@ strong
     border-radius: 20px 0 0 20px;
 }
 
+.tuiles_les_plus_populaires h2 {
+    font-family: 'Raleway Bold';
+    font-size: 1.2rem;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
 /* MAIN - DEUXIEME PARTIE */
 
 #deuxieme_partie
@@ -266,8 +304,8 @@ strong
     display: flex;
     flex-direction: column;
     background-color: white;
-    width: clamp(19rem, 23%, 40rem);
-    height: 700px;
+    width: clamp(18rem, 23%, 40rem);
+    height: 650px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
@@ -275,7 +313,7 @@ strong
 .tuiles_activites_vertical img
 {
     width: auto;
-    height: 91%;
+    height: 90%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
@@ -285,12 +323,8 @@ strong
     margin-left: 20px;
     margin-top: 15px;
 }
-
-.colonne_activites
-{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.colonne_activites {
+    width: clamp(15rem, 23%, 25rem);
 }
 
 .tuiles_activites_horizontal
@@ -298,7 +332,7 @@ strong
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 325px;
+    height: 300px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
     margin-bottom: 50px;
