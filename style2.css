@@ -7,12 +7,18 @@
     src: url('fonts/Raleway-Bold.ttf') format('truetype');
 }
 
-/* * {
-    border: solid rgb(255 0 0 / 30%) 1px;
-} */
+html {
+    font-size: 62.5%
+}
 
 body {
     margin: 0;
+}
+
+#bloc_page {
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
 }
 
 /* HEADER */
@@ -22,11 +28,13 @@ header {
     justify-content: space-between;
     align-items: flex-end;
     flex-wrap: wrap;
-    margin: 0 1.875rem;
+    max-width: 1440px;
+    margin: auto;
+    padding: 0 2rem;
 }
 
 header img {
-    width: 10rem;
+    width: 11rem;
 }
 
 header ul {
@@ -36,13 +44,14 @@ header ul {
 }
 
 header li {
-    padding: 3.1rem 1rem 2rem 1rem;
+    padding: 4.2rem 0 3rem 0;
 }
 
 header a {
     font-family: 'Raleway Regular', sans-serif;
+    font-size: 1.7rem;
     text-decoration: none;
-    padding: 3rem 2rem 0 2rem;
+    padding: 4rem 3rem 0 3rem;
     color: black;
 }
 
@@ -60,16 +69,17 @@ header a:hover {
 /* MAIN - PARTIE RECHERCHE */
 
 #partie_recherche {
-    margin: 30px 1.875rem 0 1.875rem;
+    margin-top: 3rem;
 }
 
 h1 {
     font-family: 'Raleway Bold';
-    font-size: 1.6rem;
+    font-size: 2.4rem;
 }
 
 p  {
     font-family: 'Raleway Regular';
+    font-size: 1.8rem;
 }
 
 #barre_recherche {
@@ -77,82 +87,80 @@ p  {
 }
 
 form i {
-    width: 30%;
-    padding: 14px;
+    font-size: 1.7rem;
+    padding: 2rem 2rem;
     background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
 
 #champ_texte_rechercher {
     height: 100%;
-    width: 200px;
+    width: 26rem;
     border: #F2F2F2 solid 1px;
-    padding-left: 10px;
+    padding-left: 2rem;
     font-family: 'Raleway Bold';
-    font-size: 1rem;
+    font-size: 2rem;
 }
 
 #bouton_rechercher {
     height: 100%;
-    width: 110px;
+    width: 14rem;
     border: none;
     background-color: #0065FC;
     border-radius: 0 15px 15px 0;
     color: white;
-    font-family: 'Raleway Regular';
-    font-weight: bold;
-    font-size: 1rem;
+    font-family: 'Raleway Bold';
+    font-size: 1.8rem;
 }
 
 #filtres {
     display: flex;
-    margin-top: 26px;
+    margin-top: 3rem;
 }
 
 #filtres div {
     display: flex;
     align-items: center;
-    height: 39px;
+    height: 4.5rem;
     border: 2px solid #D9D9D9;
     border-radius: 40px;
-    margin-left: 20px;
+    margin: 0 2rem;
 }
 
 #filtres span { 
-    font-size: 1.3rem;
+    font-size: 2.5rem;
+    margin-left: -1rem;
 }
 
 
 #filtres p {
     font-family: 'Raleway Bold';
-    font-size: 1.1rem;
-    margin: 9px 10px 9px 0;
+    font-size: 1.8rem;
+    margin: 1rem 2rem 1rem 1rem;
 }
 
 .fa-circle {
     color: #DEEBFF;
-    width: 41px;
 }
 
 .fa-inverse {
     color: #0065FC;
-    width: 41px;
 }
 
 #infos {
     display: flex;
     align-items: center;
-    margin-top: 15px;
+    margin-top: 1.5rem;
 }
 
 #infos i {
     color: #0065FC;
-    width: 20px;
-    height: 20px;
-    padding: 3px;
+    width: 1.5rem;
+    padding: 0.5rem;
     border-radius: 30px;
     border: 2px solid #F2F2F2;
-    margin: 10px;
+    margin: 1rem;
+    font-size: 1.5rem;
     text-align: center;
 }
 
@@ -161,7 +169,7 @@ form i {
 #premiere_partie {
     display: flex;
     justify-content: space-between;
-    margin: 0 1.875rem;
+    margin-bottom: 7rem;
 }
 
 #hebergements_a_marseille {
@@ -170,15 +178,15 @@ form i {
     width: 61%;
     background-color: #F2F2F2;
     border-radius: 25px;
-    padding: 15px 50px;
-    margin: 20px 30px 0 0;
+    padding: 1.5rem 4rem;
+    margin-top: 2rem;
 }
 
 #hebergements_a_marseille section {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
 }
 
 .tuiles_hebergements_marseille {
@@ -186,9 +194,9 @@ form i {
     flex-direction: column;
     width: clamp(15rem, 31%, 40rem);
     background-color: white;
-    height: 260px;
-    margin-bottom: 40px;
-    border-radius: 20px;
+    height: 22rem;
+    margin-bottom: 3rem;
+    border-radius: 2rem;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
 
@@ -201,20 +209,22 @@ form i {
 }
 
 .bloc_hebergements_marseille {
-    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 2rem 1.5rem 1.5rem;
+
 }
 
 h2 {
     font-family: 'Raleway Bold';
-    font-size: 1.2rem;
-    margin-top: 6px;
-    margin-bottom: 0;
+    font-size: 1.8rem;
+    margin: 0;
 }
 
 .bloc_hebergements_marseille p {
-    font-size: 0.9rem;
-    margin-top: 8px;
-    margin-bottom: 0;
+    font-size: 1.7rem;
+    margin: 5px 0;
 }
 
 strong
@@ -224,8 +234,8 @@ strong
 
 .etoiles_hebergements {
     display: flex;
-    margin-top: 10px;
-    font-size: 0.8rem;
+    margin-top: 4px;
+    font-size: 1.2rem;
 }
 
 .etoiles_bleues {
@@ -238,19 +248,27 @@ strong
     color: #D9D9D9;
 }
 
-#herbegerments_a_marseille h2 {
-    margin-top: 100px;
-}
 /* MAIN - PREMIERE PARTIE - LES PLUS POPULAIRES */
 
 #les_plus_populaires {
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
-    width: 25%;
+    width: 24%;
     border-radius: 25px;
-    padding: 15px 50px;
-    margin-top: 20px;
+    padding: 1.5rem 4rem 0 4rem;
+    margin-top: 2rem;
+}
+
+.tuiles_les_plus_populaires h2 {
+    font-family: 'Raleway Bold';
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+
+#bloc_les_plus_populaires i {
+    font-size: 2.5rem;
 }
 
 #bloc_les_plus_populaires {
@@ -262,9 +280,9 @@ strong
 .tuiles_les_plus_populaires {
     display: flex;
     background-color: white;
-    width: clamp(10rem, 100%, 30rem);
-    height: 190px;
-    margin-bottom: 40px;
+    width: clamp(10rem, 100%, 60rem);
+    height: 16rem;
+    margin-bottom: 4rem;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
@@ -274,21 +292,15 @@ strong
     height: auto;
     object-fit: cover;
     border: 6px solid white;
+    border-right: none;
     border-radius: 20px 0 0 20px;
-}
-
-.tuiles_les_plus_populaires h2 {
-    font-family: 'Raleway Bold';
-    font-size: 1.2rem;
-    margin-top: 20px;
-    margin-bottom: 0;
 }
 
 /* MAIN - DEUXIEME PARTIE */
 
 #deuxieme_partie
 {
-    margin: 3rem 1.875rem;
+    margin: 3rem 0;
 }
 
 #activites_a_marseille
@@ -305,7 +317,7 @@ strong
     flex-direction: column;
     background-color: white;
     width: clamp(18rem, 23%, 40rem);
-    height: 650px;
+    height: 500px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
@@ -324,7 +336,7 @@ strong
     margin-top: 15px;
 }
 .colonne_activites {
-    width: clamp(15rem, 23%, 25rem);
+    width: clamp(15rem, 23%, 40rem);
 }
 
 .tuiles_activites_horizontal
@@ -332,7 +344,7 @@ strong
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 300px;
+    height: 225px;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
     margin-bottom: 50px;
@@ -381,7 +393,7 @@ footer li {
 
 /* RESPONSIVE */
 
-@media screen and (min-width: 768px) and (max-width: 1399px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
     #premiere_partie {
         flex-wrap: wrap-reverse;
     }
@@ -392,8 +404,19 @@ footer li {
         width: 100%;
         background-color: #F2F2F2;
         border-radius: 25px;
-        padding: 15px 50px;
+        padding: 1.5rem 5rem 3rem 5rem;
         margin-right: 0;
+    }
+
+    .tuiles_hebergements_marseille {
+        display: flex;
+        flex-direction: column;
+        width: clamp(15rem, 31%, 40rem);
+        background-color: white;
+        height: 27rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
     }
 
     #les_plus_populaires {
@@ -411,13 +434,27 @@ footer li {
     }
 
     .tuiles_les_plus_populaires {
-    display: flex;
-    background-color: white;
-    width: clamp(10rem, 32%, 30rem);
-    height: 160px;
-    margin-bottom: 40px;
-    border-radius: 20px;
-    box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
-}
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        width: clamp(10rem, 31%, 40rem);
+        height: 27rem;
+        margin-bottom: 3rem;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
+    }
 
+    .tuiles_les_plus_populaires img {
+        width: auto;
+        height: 60%;
+        object-fit: cover;
+        border: 6px solid white;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .tuiles_les_plus_populaires h2 {
+        font-family: 'Raleway Bold';
+        font-size: 1.8rem;
+        margin: 0;
+    }
 }
