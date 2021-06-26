@@ -8,7 +8,7 @@
 }
 
 html {
-    font-size: 62.5%
+    font-size: 62.5%;
 }
 
 body {
@@ -42,10 +42,11 @@ header ul {
     list-style-type: none;
     margin: 0;
 }
+/* Border au survol */
 
 header li {
     padding: 4.2rem 0 3rem 0;
-}
+} 
 
 header a {
     font-family: 'Raleway Regular', sans-serif;
@@ -75,6 +76,7 @@ header a:hover {
 h1 {
     font-family: 'Raleway Bold';
     font-size: 2.4rem;
+    font-weight: normal;
 }
 
 p  {
@@ -115,23 +117,28 @@ form i {
 
 #filtres {
     display: flex;
+    flex-wrap: wrap;
     margin-top: 3rem;
 }
 
-#filtres div {
+#filtres section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#filtres div { 
     display: flex;
     align-items: center;
     height: 4.5rem;
     border: 2px solid #D9D9D9;
     border-radius: 40px;
-    margin: 0 2rem;
+    margin: 0 1rem 1.5rem 1.5rem;
 }
 
 #filtres span { 
     font-size: 2.5rem;
     margin-left: -1rem;
 }
-
 
 #filtres p {
     font-family: 'Raleway Bold';
@@ -143,14 +150,13 @@ form i {
     color: #DEEBFF;
 }
 
-.fa-inverse {
+.fa-blue {
     color: #0065FC;
 }
 
-#infos {
+#infos { 
     display: flex;
     align-items: center;
-    margin-top: 1.5rem;
 }
 
 #infos i {
@@ -219,6 +225,7 @@ form i {
 h2 {
     font-family: 'Raleway Bold';
     font-size: 1.8rem;
+    font-weight: normal;
     margin: 0;
 }
 
@@ -300,15 +307,14 @@ strong
 
 #deuxieme_partie
 {
-    margin: 3rem 0;
+    margin-top: 3rem;
 }
 
 #activites_a_marseille
 {
     display: flex;
     justify-content: space-between;
-    padding-top: 10px;
-    margin-bottom: 15px;
+    padding-top: 1rem;
 }
 
 .tuiles_activites_vertical
@@ -317,7 +323,7 @@ strong
     flex-direction: column;
     background-color: white;
     width: clamp(18rem, 23%, 40rem);
-    height: 500px;
+    height: 50rem;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
@@ -332,8 +338,8 @@ strong
 
 .tuiles_activites_vertical h2
 {
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
 }
 .colonne_activites {
     width: clamp(15rem, 23%, 40rem);
@@ -344,24 +350,24 @@ strong
     display: flex;
     flex-direction: column;
     background-color: white;
-    height: 225px;
+    height: 22.5rem;
     border-radius: 20px;
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
-    margin-bottom: 50px;
+    margin-bottom: 5rem;
 }
 
 .tuiles_activites_horizontal img
 {
     width: auto;
-    height: 80%;
+    height: 78%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
 .tuiles_activites_horizontal h2
 {
-    margin-left: 20px;
-    margin-top: 15px;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
 }
 
 /* FOOTER */
@@ -398,34 +404,13 @@ footer li {
         flex-wrap: wrap-reverse;
     }
 
-    #hebergements_a_marseille {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background-color: #F2F2F2;
-        border-radius: 25px;
-        padding: 1.5rem 5rem 3rem 5rem;
-        margin-right: 0;
-    }
-
-    .tuiles_hebergements_marseille {
-        display: flex;
-        flex-direction: column;
-        width: clamp(15rem, 31%, 40rem);
-        background-color: white;
-        height: 27rem;
-        margin-bottom: 3rem;
-        border-radius: 2rem;
-        box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
-    }
-
     #les_plus_populaires {
         display: flex;
         flex-direction: column;
         background-color: #F2F2F2;
         width: 100%;
         border-radius: 25px;
-        padding: 15px 50px;
+        padding: 1rem 3rem;
     }
 
     #les_plus_populaires section {
@@ -437,7 +422,7 @@ footer li {
         display: flex;
         flex-direction: column;
         background-color: white;
-        width: clamp(10rem, 31%, 40rem);
+        width: clamp(9rem, 31%, 40rem);
         height: 27rem;
         margin-bottom: 3rem;
         border-radius: 20px;
@@ -456,5 +441,93 @@ footer li {
         font-family: 'Raleway Bold';
         font-size: 1.8rem;
         margin: 0;
+    }
+
+    #hebergements_a_marseille {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #F2F2F2;
+        border-radius: 25px;
+        padding: 1rem 3rem 3rem 3rem;
+        margin-right: 0;
+    }
+
+    .tuiles_hebergements_marseille {
+        display: flex;
+        flex-direction: column;
+        width: clamp(14rem, 31%, 40rem);
+        background-color: white;
+        height: 27rem;
+        margin-bottom: 3rem;
+        border-radius: 2rem;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
+    }
+
+}
+
+@media screen and (max-width: 767px) {
+    #bloc_page {
+        padding: 0;
+    }
+
+    #filtres div { 
+        margin: 0 0.5rem 1.5rem 0.5rem;
+    }
+
+    #filtres p {
+        margin: 1rem 2rem 1rem 0;
+    }
+
+    #premiere_partie {
+        flex-wrap: wrap-reverse;
+    }
+
+    #les_plus_populaires {
+        display: flex;
+        flex-direction: column;
+        background-color: #F2F2F2;
+        width: 100%;
+        border-radius: 0;
+        padding: 1rem 2rem;
+    }
+
+    .tuiles_les_plus_populaires {
+        display: flex;
+        background-color: white;
+        width: clamp(10rem, 100%, 70rem);
+        height: 15rem;
+        margin-bottom: 2rem;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
+    }    
+
+    #hebergements_a_marseille {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color:white;
+        border-radius: 0;
+        padding: 1rem 2rem;
+        margin-right: 0;
+    }
+
+    .tuiles_hebergements_marseille {
+        display: flex;
+        flex-direction: column;
+        width: clamp(5rem, 100%, 80rem);
+        background-color: white;
+        height: 21rem;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 9%);
+    }
+
+    .tuiles_hebergements_marseille img {
+        width: auto;
+        height: 55%;
+        object-fit: cover;
+        border: 6px solid white;
+        border-radius: 20px 20px 0 0;
     }
 }
