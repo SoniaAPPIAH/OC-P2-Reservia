@@ -24,28 +24,39 @@ body {
 /* HEADER */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    flex-wrap: wrap;
     max-width: 1440px;
     margin: auto;
-    padding: 0 2rem;
+}
+
+#grid {
+    display: grid;
+    height: 10rem;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 10rem;
 }
 
 header img {
     width: 11rem;
 }
 
+#grid_hebergements {
+    grid-column: 6;
+    text-align: center;
+}
+
+#grid_activites {
+    grid-column: 7;
+    text-align: center;
+}
+
 header ul {
-    display: flex;
     list-style-type: none;
     margin: 0;
+    padding: 0;
 }
-/* Border au survol */
 
 header li {
-    padding: 4.2rem 0 3rem 0;
+    padding: 4.2rem 0 3rem 0; /* 4.2 Border au survol */
 } 
 
 header a {
@@ -56,15 +67,29 @@ header a {
     color: black;
 }
 
-#nav_sinscrire
-{
-    font-family: 'Raleway Bold', sans-serif;
-    color: #0065FC;
+#logo {
+    padding: 0;
 }
 
-header a:hover {
+#logo_reservia {
+    padding: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#grid_sinscrire {
+    grid-column: 8;
+    text-align: center;
+}
+
+#grid_sinscrire a {
     color: #0065FC;
+    font-family: 'Raleway Bold', sans-serif;
+}
+
+.nav_hover:hover {
     border-top: 2px solid #0065FC;
+    color: #0065FC;
 }
 
 /* MAIN - PARTIE RECHERCHE */
@@ -88,11 +113,11 @@ p  {
     display: flex;
 }
 
-form i {
+#icone_localisation {
     font-size: 1.7rem;
     padding: 2rem 2rem;
     background-color: #F2F2F2;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 20px 0px 0px 20px;
 }
 
 #champ_texte_rechercher {
@@ -109,10 +134,19 @@ form i {
     width: 14rem;
     border: none;
     background-color: #0065FC;
-    border-radius: 0 15px 15px 0;
+    border-radius: 0 20px 20px 0;
     color: white;
     font-family: 'Raleway Bold';
     font-size: 1.8rem;
+}
+
+#icone_rechercher {
+    display: none;
+    font-size: 1.7rem;
+    padding: 2rem 2.5rem;
+    color: white;
+    background-color: #0065FC;
+    border-radius: 20px;
 }
 
 #filtres {
@@ -305,20 +339,17 @@ strong
 
 /* MAIN - DEUXIEME PARTIE */
 
-#deuxieme_partie
-{
+#deuxieme_partie {
     margin-top: 3rem;
 }
 
-#activites_a_marseille
-{
+#activites_a_marseille {
     display: flex;
     justify-content: space-between;
     padding-top: 1rem;
 }
 
-.tuiles_activites_vertical
-{
+.tuiles_activites_vertical {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -328,25 +359,23 @@ strong
     box-shadow: 0 5px 10px rgb(0 0 0 / 7%);
 }
 
-.tuiles_activites_vertical img
-{
+.tuiles_activites_vertical img {
     width: auto;
     height: 90%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.tuiles_activites_vertical h2
-{
+.tuiles_activites_vertical h2 {
     margin-left: 2rem;
     margin-top: 1.5rem;
 }
+
 .colonne_activites {
     width: clamp(15rem, 23%, 40rem);
 }
 
-.tuiles_activites_horizontal
-{
+.tuiles_activites_horizontal {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -356,16 +385,14 @@ strong
     margin-bottom: 5rem;
 }
 
-.tuiles_activites_horizontal img
-{
+.tuiles_activites_horizontal img {
     width: auto;
     height: 78%;
     object-fit: cover;
     border-radius: 20px 20px 0 0;
 }
 
-.tuiles_activites_horizontal h2
-{
+.tuiles_activites_horizontal h2 {
     margin-left: 2rem;
     margin-top: 1.5rem;
 }
@@ -385,6 +412,7 @@ footer {
 
 h3 {
     font-family: 'Raleway Bold', sans-serif;
+    font-size: 2rem;
 }
 
 footer ul {
@@ -394,7 +422,8 @@ footer ul {
 
 footer li {
     font-family: 'Raleway Regular', sans-serif;
-    margin-bottom: 10px;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 /* RESPONSIVE */
@@ -471,6 +500,10 @@ footer li {
         padding: 0;
     }
 
+    #partie_recherche {
+        padding: 0 1.3rem;
+    }
+
     #filtres div { 
         margin: 0 0.5rem 1.5rem 0.5rem;
     }
@@ -479,8 +512,34 @@ footer li {
         margin: 1rem 2rem 1rem 0;
     }
 
+    #barre_recherche {
+        margin-top: 3rem;
+    }
+
+    #icone_localisation {
+        font-size: 1.4rem;
+        padding: 1.5rem 1.5rem;
+        background-color: #F2F2F2;
+        border-radius: 15px 0px 0px 15px;
+    }
+
+    #bouton_rechercher {
+        display: none;
+    }
+
+    #icone_rechercher {
+        display: block;
+        margin-left: -10px;
+        font-size: 1.4rem;
+        padding: 1.5rem 2rem;
+        color: white;
+        background-color: #0065FC;
+        border-radius: 15px;
+    }
+
     #premiere_partie {
         flex-wrap: wrap-reverse;
+        margin-bottom: 3rem;
     }
 
     #les_plus_populaires {
@@ -529,5 +588,45 @@ footer li {
         object-fit: cover;
         border: 6px solid white;
         border-radius: 20px 20px 0 0;
+    }
+
+    #deuxieme_partie {
+        margin-top: 4rem;
+        padding: 0 1.6rem;
+    }
+
+    #activites_a_marseille {
+    display: flex;
+    flex-direction: column;
+    padding-top: 1rem;
+    }
+
+    .tuiles_activites_vertical {
+        width: clamp(18rem, 100%, 80rem);
+        height: 18rem;
+        margin-bottom: 2rem;
+    }
+
+    .tuiles_activites_vertical img {
+        height: 74%;
+    }
+
+    .colonne_activites {
+        width: clamp(15rem, 100%, 80rem);
+    }
+    
+    .tuiles_activites_horizontal {
+        height: 18rem;
+        margin-bottom: 2rem;
+    }
+    
+    .tuiles_activites_horizontal img {
+        height: 74%;
+    }
+
+    #agencement_footer {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
     }
 }
