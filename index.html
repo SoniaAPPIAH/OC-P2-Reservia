@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/png" href="images/logo/Reservia@3x.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,44 +35,44 @@
                         <input id="champ_texte_rechercher" type="search" placeholder="Marseille, France"/>
                     </div>
                     <div>
-                        <input id="bouton_rechercher" type="button" id="rechercher" value="Rechercher"/>
+                        <input id="bouton_rechercher" type="button" value="Rechercher"/>
                     </div>
                     <div id="icone_rechercher">
                         <i class="fas fa-search"></i>
                     </div>
                 </form>
-                <div id="filtres">
-                    <p>Filtres</p>
-                    <section> 
+                <div id="section_filtres">
+                    <h2>Filtres</h2>
+                    <div id="filtres"> 
                         <div id="economique">
                             <span class="fa-stack fa-1x">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-money-bill-wave fa-stack-1x fa-blue"></i>
                             </span>
-                            <p>Économique</p>
+                            <a href="#">Économique</a>
                         </div>
                         <div id="familial">
                             <span class="fa-stack fa-1x">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-child fa-stack-1x fa-blue"></i>
                             </span>
-                            <p>Familial</p>
+                            <a href="#">Familial</a>
                         </div>
                         <div id="romantique">
                             <span class="fa-stack fa-1x">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-heart fa-stack-1x fa-blue"></i>
                             </span>
-                            <p>Romantique</p>
+                            <a href="#">Romantique</a>
                         </div>
                         <div id="animaux_autorisés">
                             <span class="fa-stack fa-1x">
                                 <i class="fas fa-circle fa-stack-2x"></i>
                                 <i class="fas fa-dog fa-stack-1x fa-blue"></i>
                             </span>
-                            <p>Animaux autorisés</p>
+                            <a href="#">Animaux autorisés</a>
                         </div>
-                    </section>
+                    </div>
                 </div>
                 <div id="infos">
                     <i class="fas fa-info"></i>
@@ -81,10 +81,10 @@
             </section>
             <!-- PREMIERE PARTIE-->
             <section id="premiere_partie">
-                <section id="hebergements_a_marseille">
-                     <h1 id="hebergements">Hébergements à Marseille</h1>
-                    <section>
-                        <article class="tuiles_hebergements_marseille">
+                <div id="hebergements_a_marseille">
+                    <h1 id="hebergements">Hébergements à Marseille</h1>
+                    <div id="bloc_tuiles_hebergements_marseille">
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo de la chambre"/>
                             <div class="bloc_hebergements_marseille">
                                 <div>
@@ -103,8 +103,8 @@
                                      </div>             
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_hebergements_marseille">
+                        </a>
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo de la chambre"/>
                             <div class="bloc_hebergements_marseille">
                                 <div>
@@ -121,8 +121,8 @@
                                     </div>            
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_hebergements_marseille">
+                        </a>
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo de la chambre"/>
                             <div class="bloc_hebergements_marseille">
                                 <div>
@@ -141,8 +141,8 @@
                                     </div>            
                                 </div>
                              </div>    
-                        </article>
-                        <article class="tuiles_hebergements_marseille">
+                        </a>
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo de la chambre"/>
                             <div class="bloc_hebergements_marseille">
                                 <div>
@@ -161,8 +161,8 @@
                                     </div>            
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_hebergements_marseille">
+                        </a>
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo de la chambre"/>
                             <div class="bloc_hebergements_marseille">
                                 <div>
@@ -181,8 +181,8 @@
                                     </div>            
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_hebergements_marseille">
+                        </a>
+                        <a href="#" class="tuiles_hebergements_marseille">
                             <img src="images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo de la chambre"/>
                              <div class="bloc_hebergements_marseille">
                                 <div>
@@ -199,19 +199,19 @@
                                     </div>           
                                 </div>
                             </div>    
-                        </article>
-                    </section>
+                        </a>
+                    </div>
                     <h2>Afficher plus</h2>
-                </section>
+                </div>
                 <section id="les_plus_populaires">
                     <div id="bloc_les_plus_populaires">
                         <h1>Les plus populaires</h1>
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <section>
-                        <article class="tuiles_les_plus_populaires">
+                    <div id="bloc_tuiles_les_plus_populaires">
+                        <a href="#" class="tuiles_les_plus_populaires">
                             <img src="images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo de la chambre"/>
-                            <div class="bloc_hebergements_marseille">
+                            <div class="bloc_hebergements_marseille width_66">
                                 <div>
                                     <h2>Hôtel Le soleil du matin</h2>
                                     <p>Nuit à partir de 128<strong>€</strong></p>
@@ -226,10 +226,10 @@
                                     </div>            
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_les_plus_populaires">
+                        </a>
+                        <a href="#" class="tuiles_les_plus_populaires">
                             <img src="images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo de la chambre"/>
-                            <div class="bloc_hebergements_marseille">
+                            <div class="bloc_hebergements_marseille width_66">
                                 <div>
                                     <h2>Au coeur de l'eau Chambres d'hôtes</h2>
                                     <p>Nuit à partir de 71<strong>€</strong></p>
@@ -246,10 +246,10 @@
                                     </div>             
                                 </div>
                             </div>    
-                        </article>
-                        <article class="tuiles_les_plus_populaires">
+                        </a>
+                        <a href="#" class="tuiles_les_plus_populaires">
                             <img src="images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo de la chambre"/>
-                            <div class="bloc_hebergements_marseille">
+                            <div class="bloc_hebergements_marseille width_66">
                                 <div>
                                     <h2>Hôtel Tout bleu et Blanc</h2>
                                     <p>Nuit à partir de 68<strong>€</strong></p>
@@ -266,50 +266,50 @@
                                     </div>             
                                 </div>
                             </div>    
-                        </article>
-                    </section>
+                        </a>
+                    </div>
                 </section>
             </section>
             <!-- DEUXIEME PARTIE-->
             <section id="deuxieme_partie">
                 <h1 id="activites">Activités à Marseille</h1>
-                <section id="activites_a_marseille">
-                    <article class="tuiles_activites_vertical">
+                <div id="activites_a_marseille">
+                    <a href="#" class="tuiles_activites_vertical">
                         <img src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo de la chambre"/>
                         <h2>Vieux Port</h2>
-                    </article>
+                    </a>
                     <div class="colonne_activites">
-                        <article class="tuiles_activites_horizontal">
+                        <a href="#" class="tuiles_activites_horizontal">
                             <img src="images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo de la chambre"/>
                             <h2>Fort de Pomègues</h2>                                       
-                        </article>
-                        <article class="tuiles_activites_horizontal">
+                        </a>
+                        <a href="#" class="tuiles_activites_horizontal">
                             <img src="images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo de la chambre"/>
                             <h2>Îles du Frioul</h2>
-                        </article>
+                        </a>
                     </div>
-                    <article class="tuiles_activites_vertical">
+                    <a href="#" class="tuiles_activites_vertical">
                         <img src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo de la chambre"/>
                         <h2>Parc National des Calanques</h2>
-                    </article>
+                    </a>
                     <div class="colonne_activites">
-                        <article class="tuiles_activites_horizontal">
+                        <a href="#" class="tuiles_activites_horizontal">
                             <img src="images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo de la chambre"/>
                             <h2>Notre-Dame-de-la-Garde</h2>
-                        </article>
-                        <article class="tuiles_activites_horizontal">
+                        </a>
+                        <a href="#" class="tuiles_activites_horizontal">
                             <img src="images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo de la chambre"/>
                             <h2>Parc Longchamp</h2>
-                        </article>
+                        </a>
                     </div>
-                </section>
+                </div>
             </section>
         </main>
     </div>
     <!-- FOOTER-->
     <footer>
         <div id="agencement_footer">
-            <div class="footer">
+            <div>
                 <h3>À propos</h3>
                 <ul>
                     <li>Fonctionnement du site</li>
@@ -317,14 +317,14 @@
                     <li>Données et confidentialités</li>
                 </ul>
             </div>
-            <div class="footer">
+            <div>
                 <h3>Nos hébergements</h3>
                 <ul>
                     <li>Charte qualité</li>
                     <li>Soumettre votre hôtel</li>
                 </ul>
             </div>
-            <div class="footer">
+            <div>
                 <h3>Assistance</h3>
                 <ul>
                     <li>Centre d'aide</li>
