@@ -199,6 +199,11 @@ header li.active a {
     color: black;
 }
 
+#filtres a:hover {
+    color: #0065FC ;
+    font-size: 1.7rem;
+}
+
 .fa-circle {
     color: #DEEBFF;
 }
